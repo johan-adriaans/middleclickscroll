@@ -69,10 +69,10 @@ void scroll(float x, float y) {
 
 void init_x() {
   display = XOpenDisplay((char *) 0);
-	if (!display) {
-		printf("Couldn't open display.\n");
-		exit(EXIT_FAILURE);
-	}
+  if (!display) {
+    printf("Couldn't open display.\n");
+    exit(EXIT_FAILURE);
+  }
   int screen = DefaultScreen(display);
   root = RootWindow(display, screen);
 }
@@ -112,7 +112,7 @@ int main () {
 
       scrollinfo.speed_y = (mouseinfo.y - start_y) * speed * direction_x;
       scrollinfo.speed_x = (mouseinfo.x - start_x) * speed * direction_y;
-      //printf("Scroll speed: %f\n", scrollinfo.speed_y);
+      //printf("Scroll speed: %f\n", scrollnfo.speed_y);
 
       if (scrollinfo.speed_x != 0 || scrollinfo.speed_y != 0) {
         scroll(
