@@ -1,7 +1,9 @@
 # middleclickscroll
 A tiny C program to enable middle click scrolling in X.
 
-I use a Wacom tablet to control my linux machine and I was fed up with the fact that there was no decent way to scroll. I tried a few tools but none seemed to do what I wanted. During the search for new tools I stumbled upon [xmouseless](https://github.com/jbensmann/xmouseless), a tiny tool to control your mouse using your keyboard. It wasn't what I was after, but I got inspired and decided to borrow bits of their code to build something new. I am not a great C programmer, but I do have 20+ years experience in programming various other languages. If you are a C programmer and you see something weird, let me know and I will fix it. :)
+I use a Wacom tablet to control my linux machine and I was fed up with the fact that there was no decent way to scroll. I tried a few tools but none seemed to do what I wanted. During the search for new tools I stumbled upon [xmouseless](https://github.com/jbensmann/xmouseless), a tool to control your mouse using your keyboard. It wasn't what I was after, but I got inspired and decided to borrow bits of their code to build something new. I am not a great C programmer, but I do have experience in programming various other languages. If you are a C programmer and you see something weird, let me know and I will fix it. :)
+
+The only downside to this is that this programs emulates mouse-scroll events. As far as I know that is the only way to scroll in X, but you cannot scroll slow and smooth. Scrolling slow just means having fewer scroll events per second.
 
 ## Features
 * It polls your mouse button state and starts scrolling when your press the middle mouse (or any other mouse button/modifier).
